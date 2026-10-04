@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Box with Deletable History</title>
+<style>
+ body{
+  background-image: url('https://i.pinimg.com/1200x/2c/90/2f/2c902f18657197b9a463f94b746e187b.jpg ');
+     
+     
+ }
+  nav {
+      background-color:#734a40;
+            text-align:center;
+            padding: 20px;
+            margin: 35px;
+            box-shadow: 0 10px 20px White;
+        }
+
+        nav a {
+            color: pink;
+            text-decoration: none;
+            margin: 35px;
+            font-weight: bold;
+            border: 2px solid pink;
+            font-size: 20px;
+
+            border-radius: 9px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+     hr{
+         border: none;
+         border-top: 2px solid pink;
+         margin: 35px;
+     }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .writing-container {
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px white;
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: pink;
+            text-align:center;
+            font-size:35px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 20px;
+            box-sizing: border-box;
+            
+        }
+
+        textarea:focus {
+            border-color:pink;
+        }
+
+        button.post-btn {
+            margin-top: 15px;
+            background-color: pink;
+            color: white;
+            padding: 12px 20px;
+            font-size: 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 20px;
+            border-color:pink;
+        }
+
+        button.post-btn:hover {
+            background-color: #f7578f;
+            
+        }
+
+        .history-container {
+            width: 100%;
+            max-width: 500px;
+            margin:auto;
+        }
+
+        .history-title {
+            font-size: 20px;
+            text-align:center;
+            color: #734a40;
+            margin-bottom: 10px;
+        }
+
+        .entry-box {
+             background-color: white;
+    padding: 15px;
+    border-left: 5px solid #734a40;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px white;
+    font-size: 19px;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+        }
+
+        .entry-text {
+            word-wrap: break-word;
+            max-width: 85%;
+            
+        }
+
+        .delete-btn {
+            color: #734a40;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: background-color 0.2s;
+        }
+
+        .delete-btn:hover {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+  <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="planner.html">Planner</a>
+
+        <a href="https://docs.google.com/document/d/1hI-58NzC30gv9-y6NQe6j7y7ZPZPR2N8E4PrdkF-BbM/mobilebasic">Schedule</a>
+
+        <a href="notes.html">Notes</a>
+ <hr />
+    </nav>
+
+    <!-- Input Section -->
+    <div class="writing-container">
+        <h2>Notes</h2>
+        <textarea id="textInput" placeholder="Type entry here..."></textarea>
+        <button class="post-btn" onclick="saveText()">Post Note</button>
+    </div>
+
+    <!-- Past Entries Display Section -->
+    <div class="history-container">
+        <div class="history-title" style="text-align:left;">Past Entries</div>
+        <div id="historyFeed"></div>
+    </div>
+
+    <script>
+        function saveText() {
+            const textarea = document.getElementById("textInput");
+            const entryText = textarea.value.trim();
+
+            if (entryText === "") {
+                alert("Please write something first!");
+                return;
+            }
+
+            const newEntry = document.createElement("div");
+            newEntry.classList.add("entry-box");
+
+            const textContent = document.createElement("span");
+            textContent.classList.add("entry-text");
+            textContent.innerText = entryText;
+
+            const deleteButton = document.createElement("button");
+            deleteButton.classList.add("delete-btn");
+            deleteButton.innerText = "Delete";
+            
+            deleteButton.onclick = function() {
+                newEntry.remove();
+            };
+
+            newEntry.appendChild(textContent);
+            newEntry.appendChild(deleteButton);
+
+            const feed = document.getElementById("historyFeed");
+            feed.insertBefore(newEntry, feed.firstChild);
+
+            textarea.value = "";
+        }
+    </script>
+
+</body>
+</html>
+
+
