@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+ body{
+  background-image: url('https://i.pinimg.com/1200x/2c/90/2f/2c902f18657197b9a463f94b746e187b.jpg ');
+     
+     
+ }
+  nav {
+      background-color:#734a40;
+            text-align:center;
+            padding: 20px;
+            margin: 35px;
+            box-shadow: 0 10px 20px White;
+        }
+
+        nav a {
+            color: pink;
+            text-decoration: none;
+            margin: 35px;
+            font-weight: bold;
+            border: 2px solid pink;
+            font-size: 20px;
+
+            border-radius: 9px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+     hr{
+         border: none;
+         border-top: 2px solid pink;
+         margin: 35px;
+     }
+     
+       header{
+     font-size: 40px;
+     text-align: center;
+     color:pink;
+        }
+     h1{
+          background-color:#734a40; 
+          text-align:center;
+          padding: 40px;
+          margin: 35px;
+          color:pink;
+          width:300px;
+          margin:auto;
+     }
+     p1{
+          font-size: 30px; 
+          font-weight: bold; 
+          text-decoration:underline;
+          text-shadow: 1px 4px 10px white;
+          color: #734a40;
+     }
+     .image1 {
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    width:300px;
+    height:300px;
+}
+
+.image2 {
+    position: absolute;
+    left: 1350px;
+    top: 250px;
+    width:300px;
+    height:320px;
+}
+
+.image3 {
+    position: absolute;
+    left: 520px;
+    top: 400px;
+    width:200px;
+    height:200px;
+}
+.image4 {
+    position: absolute;
+    left: 230px;
+    top: 900px;
+    width:300px;
+    height:320px;
+    width:300px;
+    height:300px;
+}
+
+.image5 {
+    position: absolute;
+    left: 500px;
+    top: 700px;
+    width:200px;
+    height:200px;
+    width:300px;
+    height:300px;
+}
+.image6 {
+    position: absolute;
+    left: 1350px;
+    top: 900px;
+    width:300px;
+    height:320px;
+    width:300px;
+    height:300px;
+}
+h4{
+    background-color:pink; 
+          text-align:center;
+          font-size: 20px;
+          padding: 45px;
+          margin: 35px;
+          color:#734a40;
+          width:300px;
+          margin-left: 1100px;
+}
+
+</style>
+<body>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="planner.html">Planner</a>
+
+        <a href="https://docs.google.com/document/d/1hI-58NzC30gv9-y6NQe6j7y7ZPZPR2N8E4PrdkF-BbM/mobilebasic">Schedule</a>
+
+        <a href="notes.html">Notes</a>
+ <hr>
+    </nav>
+    
+    <img src="https://i.pinimg.com/1200x/bd/db/36/bddb36270f7cbe580ecfa7df4dff8778.jpg" alt="Barbies" class=image1>
+<img src="https://i.pinimg.com/1200x/5c/e7/7e/5ce77e429ace63ff653520204464ff59.jpg" alt="Barbies" class=image2>
+<img src="https://i.pinimg.com/736x/3d/da/ea/3ddaead2c2e416178a398ef85a8cd683.jpg" alt="butterfly" class=image3>
+ 
+    
+ <header>
+<div style="font-size: 30px; color: #734a40; margin-top:200px;">°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･</div>
+        <h1>Planify </h1>
+        
+<div style="font-size: 30px; color: #734a40;">°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･</div>
+        <p1>study hub for students!</p1>
+
+        </header> 
+        <img src="https://i.pinimg.com/736x/e2/1a/ff/e21aff5167c02225d138ebb526dbdb03.jpg" alt="Monkey" class=image4>
+        <img src="https://i.pinimg.com/736x/4b/b2/50/4bb2509329540f11b261712e9f2c2ff0.jpg" alt="Barbie" class=image5>
+        <img src="https://i.pinimg.com/736x/8b/e5/2e/8be52ef043d2192e1f4713a11ae41002.jpg" alt="Barbie" class=image6>
+<h4>˚˖𓍢ִ  Welcome to Planify, place to organize all your school related things .Click the tabs on top to see the other features this hub provides. Enjoy!˚˖𓍢ִ໋❀ </h4>
+</body>
+
+
